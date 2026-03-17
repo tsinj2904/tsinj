@@ -140,17 +140,7 @@ nav {
   overflow: hidden;
 }
 
-/* Subtle grid texture */
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(var(--border-light) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border-light) 1px, transparent 1px);
-  background-size: 72px 72px;
-  opacity: 0.5;
-}
+/* Subtle grid texture — removed */
 
 /* Gold accent bar on left */
 .hero::after {
@@ -179,7 +169,7 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards 0.2s;
 }
@@ -214,7 +204,7 @@ h1 em {
   font-family: 'Cormorant Garamond', serif;
   font-size: 21px;
   color: var(--navy);
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   font-weight: 600;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards 0.5s;
@@ -357,7 +347,7 @@ h1 em {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .card-meta-item {
@@ -465,7 +455,7 @@ h1 em {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .problem-sign {
@@ -1030,7 +1020,7 @@ section { padding: 96px 48px; }
   background: var(--gold-pale);
   border: 1px solid var(--gold);
   padding: 10px 20px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .early-tag span {
@@ -1513,8 +1503,8 @@ footer {
         <div class="card-meta-item"><div class="card-dot"></div><span>20 Roseland Avenue, Roseland, NJ</span></div>
         <div class="card-meta-item"><div class="card-dot"></div><span><strong>Free</strong> · Registration required</span></div>
       </div>
-      <div class="card-register-label">Save My Spot — April 11</div>
-      <a href="https://www.zeffy.com/en-US/ticketing/free-intro-session-success-foundations-program-roseland-public-library" target="_blank" class="btn-gold" style="display:block;text-align:center;text-decoration:none;padding:16px;font-size:12px;letter-spacing:2px;font-weight:700;text-transform:uppercase;margin-bottom:12px;">Save My Spot — April 11</a>
+      <div class="card-register-label" style="margin-top:8px;">Save My Spot — April 11</div>
+      <a href="https://www.zeffy.com/en-US/ticketing/free-intro-session-success-foundations-program-roseland-public-library" target="_blank" class="btn-gold" style="display:block;text-align:center;text-decoration:none;padding:18px;font-size:12px;letter-spacing:2px;font-weight:700;text-transform:uppercase;margin-bottom:16px;">Save My Spot — April 11</a>
       <p class="seats-note">Only 15 spots available · Fills quickly</p>
     </div>
   </div>
@@ -1642,23 +1632,16 @@ footer {
 <!-- FOUNDER AUTHORITY STRIP -->
 <div style="background:#0E1E3D;padding:40px 48px;border-top:3px solid #C9A84C;border-bottom:3px solid #C9A84C;width:100%;box-sizing:border-box;">
   <div style="max-width:1100px;margin:0 auto;">
-
-    <!-- Avatar + Name — floated left on desktop, block on mobile -->
     <div style="margin-bottom:20px;overflow:hidden;">
-      <div style="float:left;width:68px;height:68px;border-radius:50%;background:#C9A84C;display:table-cell;vertical-align:middle;text-align:center;border:3px solid rgba(255,255,255,0.15);margin-right:16px;">
-        <span style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0E1E3D;line-height:68px;">RA</span>
-      </div>
+      <img src="headshot.png" alt="Dr. Rick Alonso" style="float:left;width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid #C9A84C;margin-right:16px;">
       <div style="overflow:hidden;padding-top:6px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:#C9A84C;margin-bottom:5px;">Dr. Rick Alonso, Ed.D.</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.6);line-height:1.8;font-weight:400;">Founder &amp; Director &nbsp;·&nbsp; Former School Administrator &nbsp;·&nbsp; Hospital COO &nbsp;·&nbsp; 8+ Years Teaching Youth</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.6);line-height:1.8;font-weight:400;">Founder &amp; Director · Former School Administrator · Hospital COO · 8+ Years Teaching Youth</div>
       </div>
     </div>
-
-    <!-- Quote — full width block below -->
     <div style="border-top:1px solid rgba(201,168,76,0.35);padding-top:20px;font-family:'Cormorant Garamond',serif;font-size:17px;color:rgba(255,255,255,0.85);line-height:1.7;font-style:italic;">
       "I spent decades in education and executive leadership watching capable kids underperform. Not from lack of ability, but from lack of training in the skills no one explicitly teaches. I built this program to change that."
     </div>
-
   </div>
 </div>
 
